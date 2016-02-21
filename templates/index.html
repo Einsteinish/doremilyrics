@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-content">
+<div class="row-fluid">
+    <div class="span12 jumbotron mast-head">
+        <br><br>
+        <h1>Songs and Lyrics</h1>
+        <p class="lead">Want to know the Lyrics?</p>
+        <a href="{% if user.is_authenticated %}{% url 'resource_home' %}{% else %}{% url 'registration_register' %}{% endif %}" class="btn btn-danger register-button btn-large"> Register Now <i class="icon-double-angle-right"></i></a> 
+    </div>
+</div>
+<div class="row-fluid">
+<div class="marketing marketing-head">
+    <h2></h2>
+
+    <div class="media">
+        {% load static from staticfiles %}
+        <!--
+        <img src="{% static 'img/thumbs-up.png' %}"  height=128 width=128 alt="most recommended" class="pull-left img-circle" />
+        -->
+        <div class="media-body">
+            <h4 class="media-heading"></h4>
+        </div>
+    </div>
+
+    <div class="media">
+        {% load static from staticfiles %}
+        <!--
+        <img src="{% static 'img/Share.png' %}" height=128 width=128 alt="share resources" class="pull-left img-circle" />
+        -->
+        <div class="media-body">
+            <h4 class="media-heading"></h4>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row-fluid">
+    <div class="marketing marketing-head">
+        <h2></h2>
+        <div class="row-fluid topic-images">
+            <!--
+            <ul class="unstyled">
+                {% load static from staticfiles %}
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='andromeda-milkyway-collision' %}"><img src="{% static "img/Andromeda-Milky-Collision-Thumb.png" %}" alt="andromeda-milkyway-collision" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='blackhole' %}"><img src="{% static "img/Blackhole-Thumb.jpg" %}" alt="blackhole" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='string-theory' %}"><img src="{% static "img/StringTheory-Thumb.gif" %}" alt="string-theory-gif" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='supernova' %}"><img src="{% static "img/SuperNova-SN1994D-Thumb.jpg" %}" alt="supernova-SN1994D" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='quantum-entanglement' %}"><img src="{% static "img/QuantumEntanglement-Thumb.jpg" %}" alt="quantum-entanglement" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='multiverse' %}"><img src="{% static "img/Multiverse-Thumb.jpg" %}" alt="multiverse" /></a></li>
+                <li class="span2"><a href="{% url 'resource_topic_home' slug='universe-scale' %}"><img src="{% static "img/UniverseScale-Thumb.png" %}" alt="universe-scale" /></a></li>
+            </ul> -->
+        </div>
+
+        <div class="btn-group">
+        <br>
+        <a href="{% url 'page_about' %}" class="btn btn-success btn-large"><i class="icon-info"></i>About</a>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}
