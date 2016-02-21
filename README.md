@@ -1,6 +1,5 @@
 #Doremi Lyrics (http://doremilyrics.com)
 ----
-![alt text](http://doremilyrics.com/static/img/Blackhole.jpg)
 
 We are developing knowledge library for learning Qunatum Universe. The best resources to learn something on the web are scattered and we may waste lot of time. We aim to elinimate this by recommending the best resources.
 
