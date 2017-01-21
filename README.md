@@ -21,7 +21,7 @@ We are developing knowledge library for learning Qunatum Universe. The best reso
 
 ##Tools/Apps Used
 
-+ [Django 1.6.11](https://www.djangoproject.com/)
++ [Django 1.8.7](https://www.djangoproject.com/)
 + [Twitter Bootstrap](http://getbootstrap.com/)
 + [django-registration](https://django-registration.readthedocs.org/en/latest/)
 + [django-guardian](https://github.com/lukaszb/django-guardian)
@@ -58,4 +58,6 @@ This project is licensed under [MIT License](http://mit-license.org). See LICENS
 + The upload_to folder switched to MEDIA_ROOT/topics/%Y/%m/%d/ and MEDIA_ROOT/resources/%Y/%m/%d/ to resources/models.py to Topic and Resource classes on Jan. 12, 2016.
 + Can use markdown (django-markdown-duex) for TextField such as Description and Help_Text in Resources/Topic. Basic tutorial is available at https://daringfireball.net/projects/markdown/basics.
 + Added a video field as well as a field for embedded YouTube video to Resources.
++ Adsense added on Jan 5, 2017. 
++ Adding topic is opened to any user on Jan 21, 2017. 
 
